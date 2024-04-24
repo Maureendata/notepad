@@ -27,7 +27,11 @@ notesContainer.addEventListener("click",function(e){
         updateStorage();
     }
 });
-
+notesContainer.addEventListener("keyup",function(e){
+    if(e.target.classList.contains("input-box")){
+        updateStorage();
+    }
+})
 
 
 // ---new version
