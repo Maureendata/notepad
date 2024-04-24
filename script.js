@@ -4,7 +4,7 @@ let notes=document.querySelectorAll("input-box");
 
 
 function showNotes(){
-    notesContainer.innerHTML=localStorage.getItem("notes")||"";
+    notesContainer.innerHTML=localStorage.getItem("notes") || "";
 }
 showNotes();
 
@@ -26,4 +26,10 @@ notesContainer.addEventListener("click",function(e){
         e.target.parentElement.remove();
         updateStorage();
     }
-})
+});
+
+
+
+// ---new version
+
+
